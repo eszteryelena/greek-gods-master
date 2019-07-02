@@ -9,6 +9,7 @@ namespace greek_gods
 {
     class character
     {
+        //decalres an int called megara
         public int megara;
         public int x, y, width, height;//variables for the rectangle
         public Image characterImage;//variable for the planet's image
@@ -22,6 +23,7 @@ namespace greek_gods
             width = 30;
             height = 50;
 
+            //if megara equals one then the character will be megara
             if (megara == 1)
                 characterImage = Image.FromFile("megaraselect.png");
             characterRec = new Rectangle(x, y, width, height);
