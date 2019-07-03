@@ -41,5 +41,10 @@ namespace greek_gods
         {
 
         }
+
+        private void mnuStart_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

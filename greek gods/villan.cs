@@ -42,6 +42,7 @@ namespace greek_gods
             villanRec.Location = new Point(x, y);
             if (villanRec.Location.Y > 400)
             {
+                score += 1;// add 1 to score when planet reaches bottom of panel
                 y = 20;
                 villanRec.Location = new Point(x, y);
             }

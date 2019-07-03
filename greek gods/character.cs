@@ -46,14 +46,50 @@ namespace greek_gods
             }
         }
 
-        //public character(int megara)
-       // {
-           // this.megara = megara;
-           
-         //   }
+        public void moveCharacter(string move)
+        {
+            characterRec.Location = new Point(x, y);
+
+            if (move == "right")
+            {
+                if (characterRec.Location.X > 450) // is spaceship within 50 of right side
+                {
+
+                    x = 450;
+                    characterRec.Location = new Point(x, y);
+                }
+                else
+                {
+                    x += 5;
+                    characterRec.Location = new Point(x, y);
+                }
+
+            }
+
+            if (move == "left")
+            {
+                if (characterRec.Location.X < 10) // is spaceship within 10 of left side
+                {
+
+                    x = 10;
+                    characterRec.Location = new Point(x, y);
+                }
+                else
+                {
+                    x -= 5;
+                    characterRec.Location = new Point(x, y);
+                }
+
+            }
+
+
         }
 
-    
+
+
+    }
+
+
 
 }
 
