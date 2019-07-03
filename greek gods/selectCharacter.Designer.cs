@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(selectCharacter));
-            this.megaraImageSelect = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -39,23 +39,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.megaraImageSelect)).BeginInit();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.SuspendLayout();
-            // 
-            // megaraImageSelect
-            // 
-            this.megaraImageSelect.BackColor = System.Drawing.Color.Transparent;
-            this.megaraImageSelect.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("megaraImageSelect.BackgroundImage")));
-            this.megaraImageSelect.Location = new System.Drawing.Point(-1, -15);
-            this.megaraImageSelect.Name = "megaraImageSelect";
-            this.megaraImageSelect.Size = new System.Drawing.Size(652, 326);
-            this.megaraImageSelect.TabIndex = 0;
-            this.megaraImageSelect.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -73,7 +65,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(35, 103);
+            this.pictureBox2.Location = new System.Drawing.Point(99, 95);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(212, 39);
             this.pictureBox2.TabIndex = 2;
@@ -111,7 +103,7 @@
             this.chose2.BackColor = System.Drawing.Color.Transparent;
             this.chose2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chose2.ForeColor = System.Drawing.Color.White;
-            this.chose2.Location = new System.Drawing.Point(88, 145);
+            this.chose2.Location = new System.Drawing.Point(152, 137);
             this.chose2.Name = "chose2";
             this.chose2.Size = new System.Drawing.Size(83, 29);
             this.chose2.TabIndex = 6;
@@ -138,7 +130,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(72, 71);
+            this.label1.Location = new System.Drawing.Point(136, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 29);
             this.label1.TabIndex = 8;
@@ -166,6 +158,21 @@
             this.pictureBox5.TabIndex = 9;
             this.pictureBox5.TabStop = false;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
+            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox6.Location = new System.Drawing.Point(438, 13);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(196, 259);
+            this.pictureBox6.TabIndex = 11;
+            this.pictureBox6.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // selectCharacter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -173,6 +180,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(634, 461);
+            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.label1);
@@ -182,31 +190,30 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.megaraImageSelect);
             this.Name = "selectCharacter";
             this.Text = "selectCharacter";
-            ((System.ComponentModel.ISupportInitialize)(this.megaraImageSelect)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox megaraImageSelect;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label chose1;
-        private System.Windows.Forms.Label chose2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        public System.Windows.Forms.Label chose2;
+        private System.Windows.Forms.Timer timer1;
     }
 }

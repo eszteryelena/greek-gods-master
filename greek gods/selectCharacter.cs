@@ -12,11 +12,13 @@ namespace greek_gods
 {
     public partial class selectCharacter : Form
     {
-
-        public int megara =0;
+        character character = new character();
+        public static int variable1;
+        // declaration in form1
         public selectCharacter()
         {
             InitializeComponent();
+            timer1.Enabled = false;
         }
 
         private void chose1_Click(object sender, EventArgs e)
@@ -24,6 +26,7 @@ namespace greek_gods
             //this openes a new level one form
             this.Hide();
             level1 fl1 = new level1();
+            //timer1.Enabled = true;
             fl1.ShowDialog();
             this.Close();
         }
@@ -42,7 +45,8 @@ namespace greek_gods
         {
             //this openes a new level one form
             this.Hide();
-            megara = 1;
+            //character.characterImage = Image.FromFile("object.png");
+            variable1 = 1;
             level1 fl1 = new level1();
             fl1.ShowDialog();
             this.Close();
@@ -59,6 +63,9 @@ namespace greek_gods
             chose2.ForeColor = Color.White;
         }
 
+        private void timer1_Tick(object sender, EventArgs e)
+        {
 
+        }
     }
 }

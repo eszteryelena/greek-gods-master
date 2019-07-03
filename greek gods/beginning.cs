@@ -36,5 +36,10 @@ namespace greek_gods
         {
             play.ForeColor = Color.White;
         }
+
+        private void beginning_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

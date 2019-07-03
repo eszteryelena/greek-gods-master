@@ -97,6 +97,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Name = "beginning";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.beginning_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

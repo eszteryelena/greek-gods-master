@@ -66,6 +66,7 @@
     <Compile Include="selectCharacter.Designer.cs">
       <DependentUpon>selectCharacter.cs</DependentUpon>
     </Compile>
+    <Compile Include="villan.cs" />
     <EmbeddedResource Include="beginning.resx">
       <DependentUpon>beginning.cs</DependentUpon>
     </EmbeddedResource>

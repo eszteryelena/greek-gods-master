@@ -10,36 +10,52 @@ namespace greek_gods
     class character
     {
         //decalres an int called megara
-        public int megara;
+        
         public int x, y, width, height;//variables for the rectangle
         public Image characterImage;//variable for the planet's image
+        public Image characterImage2;//variable for the planet's image
         public Rectangle characterRec;//variable for a rectangle to place our image in
-        //Create a constructor (initialises the values of the fields)
+                                      //Create a constructor (initialises the values of the fields)
+
+        //private selectCharacter slctChar;
+
         public character()
         {
-
+           //this.megara = megara;
             x = 10;
-            y = 350;
-            width = 30;
-            height = 50;
-
-            //if megara equals one then the character will be megara
-            if (megara == 1)
-                characterImage = Image.FromFile("megaraselect.png");
+            y = 360;
+            width = 40;
+            height = 40;
             characterRec = new Rectangle(x, y, width, height);
+            characterImage = Image.FromFile("object.png");
+            characterImage2 = Image.FromFile("statue1.png");
 
-            //if megara = 1{
-            //  characterImage = Image.FromFile("human1.png");
-            //characterRec = new Rectangle(x, y, width, height);
         }
 
-        public character(int megara)
+        public void drawCharacter(Graphics g)
         {
-            this.megara = megara;
+            characterRec = new Rectangle(x, y, width, height);
            
+
+            if (selectCharacter.variable1 == 1){
+                g.DrawImage(characterImage, characterRec);
+               }
+            else
+            {
+                g.DrawImage(characterImage2, characterRec);
             }
         }
-    }
-                
+
+        //public character(int megara)
+       // {
+           // this.megara = megara;
+           
+         //   }
+        }
 
     
+
+}
+
+
+
