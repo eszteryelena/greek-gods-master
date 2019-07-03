@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Reflection;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,12 +25,14 @@ namespace greek_gods
         public level1()
         {
             InitializeComponent();
+
             for (int i = 0; i < 7; i++)
             {
                 int x = 10 + (i * 75);
                 villan[i] = new villan(x);
             }
-
+            typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty |
+            BindingFlags.Instance | BindingFlags.NonPublic, null, pnlGame, new object[] { true });
         }
 
         private void level1_Load(object sender, EventArgs e)

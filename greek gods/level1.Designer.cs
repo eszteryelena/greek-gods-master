@@ -133,6 +133,7 @@
             this.txtLives.Name = "txtLives";
             this.txtLives.Size = new System.Drawing.Size(92, 19);
             this.txtLives.TabIndex = 17;
+            this.txtLives.Text = "5";
             // 
             // txtscore
             // 
@@ -142,6 +143,7 @@
             this.txtscore.Name = "txtscore";
             this.txtscore.Size = new System.Drawing.Size(92, 19);
             this.txtscore.TabIndex = 18;
+            this.txtscore.Text = "0";
             // 
             // label3
             // 
