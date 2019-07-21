@@ -44,6 +44,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuStart = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuStop = new System.Windows.Forms.ToolStripMenuItem();
+            this.tmrFollow = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -182,6 +183,11 @@
             this.mnuStop.Text = "stop";
             this.mnuStop.Click += new System.EventHandler(this.mnuStop_Click);
             // 
+            // tmrFollow
+            // 
+            this.tmrFollow.Enabled = true;
+            this.tmrFollow.Tick += new System.EventHandler(this.tmrFollow_Tick);
+            // 
             // level1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -207,6 +213,9 @@
             this.Load += new System.EventHandler(this.level1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.level1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.level1_KeyUp);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.level1_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.level1_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.level1_MouseUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.menuStrip1.ResumeLayout(false);
@@ -232,5 +241,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mnuStart;
         private System.Windows.Forms.ToolStripMenuItem mnuStop;
+        public System.Windows.Forms.Timer tmrFollow;
     }
 }

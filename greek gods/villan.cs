@@ -22,8 +22,8 @@ namespace greek_gods
         //Create a constructor (initialises the values of the fields)
         public villan( int spacing)
         {
-            x = spacing;
-            y = 10;
+            y = spacing; //changed
+            x = 10; //changed
             width = 20;
             height = 20;
             villanImage = Image.FromFile("object.png");
@@ -40,10 +40,10 @@ namespace greek_gods
         public void moveVillan()
         {
             villanRec.Location = new Point(x, y);
-            if (villanRec.Location.Y > 400)
+            if (villanRec.Location.X > 400) //changed
             {
                 score += 1;// add 1 to score when planet reaches bottom of panel
-                y = 20;
+                x = 20; //changed
                 villanRec.Location = new Point(x, y);
             }
 

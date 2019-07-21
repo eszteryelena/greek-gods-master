@@ -54,9 +54,9 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 246);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 188);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(369, 558);
+            this.pictureBox1.Size = new System.Drawing.Size(299, 577);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 

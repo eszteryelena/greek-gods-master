@@ -22,13 +22,13 @@ namespace greek_gods
         public character()
         {
            //this.megara = megara;
-            x = 10;
+            x = 360;
             y = 360;
-            width = 40;
-            height = 40;
+            width = 35;
+            height = 55;
             characterRec = new Rectangle(x, y, width, height);
-            characterImage = Image.FromFile("object.png");
-            characterImage2 = Image.FromFile("statue1.png");
+            characterImage = Image.FromFile("megaraselect.png");
+            characterImage2 = Image.FromFile("herculesselect.png");
 
         }
 
@@ -46,46 +46,46 @@ namespace greek_gods
             }
         }
 
-        public void moveCharacter(string move)
-        {
-            characterRec.Location = new Point(x, y);
+//       public void moveCharacter(string move)
+ //       {
+ //           characterRec.Location = new Point(x, y);
+ //
+   //         if (move == "down")
+     //       {
+//                if (characterRec.Location.Y > 450) // is spaceship within 50 of right side
+  //              {
+  //
+    //                y = 450;
+      //              characterRec.Location = new Point(x, y);
+        //        }
+          //      else
+            //    {
+              //      y += 5;
+                //    characterRec.Location = new Point(x, y);
+   //             }
 
-            if (move == "right")
-            {
-                if (characterRec.Location.X > 450) // is spaceship within 50 of right side
-                {
+   //         }
+   //
+     //       if (move == "up")
+  //          {
+    //            if (characterRec.Location.Y < 10) // is spaceship within 10 of left side
+      //          {
+//
+  //                  y = 10;
+    //                characterRec.Location = new Point(x, y);
+      //          }
+        //        else
+          //      {
+        //            y -= 5;
+             //       characterRec.Location = new Point(x, y);
+           //     }
 
-                    x = 450;
-                    characterRec.Location = new Point(x, y);
-                }
-                else
-                {
-                    x += 5;
-                    characterRec.Location = new Point(x, y);
-                }
-
-            }
-
-            if (move == "left")
-            {
-                if (characterRec.Location.X < 10) // is spaceship within 10 of left side
-                {
-
-                    x = 10;
-                    characterRec.Location = new Point(x, y);
-                }
-                else
-                {
-                    x -= 5;
-                    characterRec.Location = new Point(x, y);
-                }
-
-            }
-
-
-        }
+         //   }
 
 
+       // }
+
+        public void move1Character(int x, string move) { }
 
     }
 
