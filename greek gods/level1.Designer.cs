@@ -34,7 +34,6 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tmrVillan = new System.Windows.Forms.Timer(this.components);
-            this.tmrHero = new System.Windows.Forms.Timer(this.components);
             this.lblname = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,15 +43,19 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuStart = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuStop = new System.Windows.Forms.ToolStripMenuItem();
-            this.tmrFollow = new System.Windows.Forms.Timer(this.components);
+            this.tmrHero = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pnlGame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlGame
             // 
             this.pnlGame.BackColor = System.Drawing.Color.Transparent;
+            this.pnlGame.Controls.Add(this.pictureBox1);
             this.pnlGame.Location = new System.Drawing.Point(24, 47);
             this.pnlGame.Name = "pnlGame";
             this.pnlGame.Size = new System.Drawing.Size(500, 400);
@@ -84,11 +87,6 @@
             // tmrVillan
             // 
             this.tmrVillan.Tick += new System.EventHandler(this.tmrVillan_Tick);
-            // 
-            // tmrHero
-            // 
-            this.tmrHero.Interval = 50;
-            this.tmrHero.Tick += new System.EventHandler(this.tmrHero_Tick);
             // 
             // lblname
             // 
@@ -145,6 +143,7 @@
             this.txtscore.Size = new System.Drawing.Size(92, 19);
             this.txtscore.TabIndex = 18;
             this.txtscore.Text = "0";
+            this.txtscore.TextChanged += new System.EventHandler(this.txtscore_TextChanged);
             // 
             // label3
             // 
@@ -183,10 +182,19 @@
             this.mnuStop.Text = "stop";
             this.mnuStop.Click += new System.EventHandler(this.mnuStop_Click);
             // 
-            // tmrFollow
+            // tmrHero
             // 
-            this.tmrFollow.Enabled = true;
-            this.tmrFollow.Tick += new System.EventHandler(this.tmrFollow_Tick);
+            this.tmrHero.Tick += new System.EventHandler(this.tmrHero_Tick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.LightCoral;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(407, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(73, 76);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // level1
             // 
@@ -211,15 +219,13 @@
             this.Name = "level1";
             this.Text = "level1";
             this.Load += new System.EventHandler(this.level1_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.level1_KeyDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.level1_KeyUp);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.level1_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.level1_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.level1_MouseUp);
+            this.pnlGame.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -231,7 +237,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Timer tmrVillan;
-        private System.Windows.Forms.Timer tmrHero;
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -241,6 +246,7 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mnuStart;
         private System.Windows.Forms.ToolStripMenuItem mnuStop;
-        public System.Windows.Forms.Timer tmrFollow;
+        private System.Windows.Forms.Timer tmrHero;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

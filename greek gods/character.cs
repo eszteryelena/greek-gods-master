@@ -17,7 +17,6 @@ namespace greek_gods
         public Rectangle characterRec;//variable for a rectangle to place our image in
                                       //Create a constructor (initialises the values of the fields)
 
-        //private selectCharacter slctChar;
 
         public character()
         {
@@ -85,12 +84,15 @@ namespace greek_gods
 
        // }
 
-        public void move1Character(int x, string move) { }
+       
+        // public void moveCharacter(int mouseX, int mouseY)
+       // {
+       //     characterRec.X = mouseX;
+      //     characterRec.Y = mouseY;
+       // }
 
+        
     }
-
-
-
 }
 
 
