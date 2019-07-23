@@ -15,6 +15,7 @@ namespace greek_gods
         public Image characterImage;//variable for the planet's image
         public Image characterImage2;//variable for the planet's image
         public Rectangle characterRec;//variable for a rectangle to place our image in
+
                                       //Create a constructor (initialises the values of the fields)
 
 
@@ -33,8 +34,6 @@ namespace greek_gods
 
         public void drawCharacter(Graphics g)
         {
-            characterRec = new Rectangle(x, y, width, height);
-           
 
             if (selectCharacter.variable1 == 1){
                 g.DrawImage(characterImage, characterRec);
@@ -45,53 +44,8 @@ namespace greek_gods
             }
         }
 
-//       public void moveCharacter(string move)
- //       {
- //           characterRec.Location = new Point(x, y);
- //
-   //         if (move == "down")
-     //       {
-//                if (characterRec.Location.Y > 450) // is spaceship within 50 of right side
-  //              {
-  //
-    //                y = 450;
-      //              characterRec.Location = new Point(x, y);
-        //        }
-          //      else
-            //    {
-              //      y += 5;
-                //    characterRec.Location = new Point(x, y);
-   //             }
-
-   //         }
-   //
-     //       if (move == "up")
-  //          {
-    //            if (characterRec.Location.Y < 10) // is spaceship within 10 of left side
-      //          {
-//
-  //                  y = 10;
-    //                characterRec.Location = new Point(x, y);
-      //          }
-        //        else
-          //      {
-        //            y -= 5;
-             //       characterRec.Location = new Point(x, y);
-           //     }
-
-         //   }
 
 
-       // }
-
-       
-        // public void moveCharacter(int mouseX, int mouseY)
-       // {
-       //     characterRec.X = mouseX;
-      //     characterRec.Y = mouseY;
-       // }
-
-        
     }
 }
 

@@ -19,9 +19,6 @@ namespace greek_gods
         villan[] villan = new villan[7]; //create the object, planet1
         Random xspeed = new Random();
         character character = new character();
-        //bool left, right;
-        //public int Top { get; }
-        //public int Left { get; }
         int score, lives;
     
 
@@ -37,11 +34,6 @@ namespace greek_gods
             }
             typeof(Panel).InvokeMember("DoubleBuffered", BindingFlags.SetProperty |
             BindingFlags.Instance | BindingFlags.NonPublic, null, pnlGame, new object[] { true });
-        }
-
-        private void level1_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void pnlGame_Paint(object sender, PaintEventArgs e)
@@ -65,16 +57,17 @@ namespace greek_gods
 
 
         }
+        private void level1_Load(object sender, EventArgs e)
+        {
 
+        }
 
         private void tmrHero_Tick(object sender, EventArgs e)
         {
 
         character.characterRec.Y = MousePosition.Y ;
-        character.characterRec.X= MousePosition.X;
-
-      pictureBox1.Top = MousePosition.Y;
-            pictureBox1.Left = MousePosition.X;
+       character.characterRec.X= MousePosition.X;
+            Invalidate();
 
         }
 
@@ -95,11 +88,10 @@ namespace greek_gods
             tmrVillan.Enabled = false;
         }
 
-        private void level1_MouseMove(object sender, MouseEventArgs e)
-        {
-            //character.moveCharacter(e.X, e.Y);
-            ///character.characterRec.Location = new System.Drawing.Point(e.X, e.Y);
-        }
+       // private void level1_MouseMove(object sender, MouseEventArgs e)
+      //  {
+        //    character.moveCharacter(e.X, e.Y);
+       // }
 
         private void txtscore_TextChanged(object sender, EventArgs e)
         {
