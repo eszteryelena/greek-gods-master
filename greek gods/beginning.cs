@@ -14,6 +14,7 @@ namespace greek_gods
     {
         //this will switch from this form to select Character
         // ghgfhvghuvgfyu 
+        public static string SetValueForText1 = "";
         public beginning()
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace greek_gods
         private void play_Click(object sender, EventArgs e)
         {
             this.Hide();
+            SetValueForText1 = txtboxName.Text;
             selectCharacter sc = new selectCharacter();
             sc.ShowDialog();
             this.Close();
@@ -43,6 +45,36 @@ namespace greek_gods
         }
 
         private void mnuStart_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void beginning_Shown(object sender, EventArgs e)
+        {
+            txtboxName.Focus();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtboxName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
         {
 
         }

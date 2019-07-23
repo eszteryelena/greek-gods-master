@@ -59,15 +59,13 @@ namespace greek_gods
         }
         private void level1_Load(object sender, EventArgs e)
         {
-
+            txtName.Text = beginning.SetValueForText1;
         }
 
         private void tmrHero_Tick(object sender, EventArgs e)
         {
-
-        character.characterRec.Y = MousePosition.Y ;
-       character.characterRec.X= MousePosition.X;
-            Invalidate();
+       character.characterRec.Y = MousePosition.Y - (character.characterRec.Height / 2);
+       Invalidate();
 
         }
 

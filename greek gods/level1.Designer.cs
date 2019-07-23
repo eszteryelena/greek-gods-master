@@ -34,9 +34,8 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tmrVillan = new System.Windows.Forms.Timer(this.components);
-            this.lblname = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lb = new System.Windows.Forms.Label();
             this.txtLives = new System.Windows.Forms.TextBox();
             this.txtscore = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,6 +43,7 @@
             this.mnuStart = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuStop = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrHero = new System.Windows.Forms.Timer(this.components);
+            this.txtName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -84,18 +84,6 @@
             // 
             this.tmrVillan.Tick += new System.EventHandler(this.tmrVillan_Tick);
             // 
-            // lblname
-            // 
-            this.lblname.AutoSize = true;
-            this.lblname.BackColor = System.Drawing.Color.Transparent;
-            this.lblname.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblname.ForeColor = System.Drawing.Color.White;
-            this.lblname.Location = new System.Drawing.Point(550, 102);
-            this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(56, 25);
-            this.lblname.TabIndex = 14;
-            this.lblname.Text = "play";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -108,17 +96,17 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "lives";
             // 
-            // label2
+            // lb
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(545, 157);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 25);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "score";
+            this.lb.AutoSize = true;
+            this.lb.BackColor = System.Drawing.Color.Transparent;
+            this.lb.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb.ForeColor = System.Drawing.Color.White;
+            this.lb.Location = new System.Drawing.Point(545, 157);
+            this.lb.Name = "lb";
+            this.lb.Size = new System.Drawing.Size(70, 25);
+            this.lb.TabIndex = 16;
+            this.lb.Text = "score";
             // 
             // txtLives
             // 
@@ -180,7 +168,18 @@
             // 
             // tmrHero
             // 
+            this.tmrHero.Interval = 200;
             this.tmrHero.Tick += new System.EventHandler(this.tmrHero_Tick);
+            // 
+            // txtName
+            // 
+            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(535, 105);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(92, 19);
+            this.txtName.TabIndex = 21;
+            this.txtName.Text = "0";
             // 
             // level1
             // 
@@ -189,14 +188,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(634, 461);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtscore);
             this.Controls.Add(this.txtLives);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lb);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblname);
             this.Controls.Add(this.pnlGame);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
@@ -220,9 +219,8 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Timer tmrVillan;
-        private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lb;
         private System.Windows.Forms.TextBox txtLives;
         private System.Windows.Forms.TextBox txtscore;
         private System.Windows.Forms.Label label3;
@@ -230,5 +228,6 @@
         private System.Windows.Forms.ToolStripMenuItem mnuStart;
         private System.Windows.Forms.ToolStripMenuItem mnuStop;
         private System.Windows.Forms.Timer tmrHero;
+        private System.Windows.Forms.TextBox txtName;
     }
 }
