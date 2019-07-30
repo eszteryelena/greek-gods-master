@@ -44,39 +44,21 @@ namespace greek_gods
 
         }
 
-        private void mnuStart_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void beginning_Shown(object sender, EventArgs e)
         {
             txtboxName.Focus();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+
+
+        private void txtboxName_KeyPress(object sender, KeyPressEventArgs e)
         {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtboxName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

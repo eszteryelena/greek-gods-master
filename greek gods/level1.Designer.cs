@@ -44,14 +44,19 @@
             this.mnuStop = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrHero = new System.Windows.Forms.Timer(this.components);
             this.txtName = new System.Windows.Forms.TextBox();
+            this.blast = new System.Windows.Forms.PictureBox();
+            this.tmrBlast = new System.Windows.Forms.Timer(this.components);
+            this.pnlGame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.blast)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlGame
             // 
             this.pnlGame.BackColor = System.Drawing.Color.Transparent;
+            this.pnlGame.Controls.Add(this.blast);
             this.pnlGame.Location = new System.Drawing.Point(24, 47);
             this.pnlGame.Name = "pnlGame";
             this.pnlGame.Size = new System.Drawing.Size(500, 400);
@@ -114,6 +119,7 @@
             this.txtLives.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLives.Location = new System.Drawing.Point(535, 262);
             this.txtLives.Name = "txtLives";
+            this.txtLives.ReadOnly = true;
             this.txtLives.Size = new System.Drawing.Size(92, 19);
             this.txtLives.TabIndex = 17;
             this.txtLives.Text = "5";
@@ -124,6 +130,7 @@
             this.txtscore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtscore.Location = new System.Drawing.Point(534, 183);
             this.txtscore.Name = "txtscore";
+            this.txtscore.ReadOnly = true;
             this.txtscore.Size = new System.Drawing.Size(92, 19);
             this.txtscore.TabIndex = 18;
             this.txtscore.Text = "0";
@@ -173,13 +180,31 @@
             // 
             // txtName
             // 
+            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(535, 105);
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.SystemColors.Info;
+            this.txtName.Location = new System.Drawing.Point(534, 105);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(92, 19);
+            this.txtName.Size = new System.Drawing.Size(92, 22);
             this.txtName.TabIndex = 21;
             this.txtName.Text = "0";
+            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // blast
+            // 
+            this.blast.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("blast.BackgroundImage")));
+            this.blast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.blast.Location = new System.Drawing.Point(380, 360);
+            this.blast.Name = "blast";
+            this.blast.Size = new System.Drawing.Size(15, 15);
+            this.blast.TabIndex = 0;
+            this.blast.TabStop = false;
+            // 
+            // tmrBlast
+            // 
+            this.tmrBlast.Enabled = true;
+            this.tmrBlast.Tick += new System.EventHandler(this.tmrBlast_Tick);
             // 
             // level1
             // 
@@ -204,10 +229,13 @@
             this.Name = "level1";
             this.Text = "level1";
             this.Load += new System.EventHandler(this.level1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.onKeyDown);
+            this.pnlGame.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.blast)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,5 +257,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuStop;
         private System.Windows.Forms.Timer tmrHero;
         private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.PictureBox blast;
+        private System.Windows.Forms.Timer tmrBlast;
     }
 }

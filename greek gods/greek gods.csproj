@@ -51,7 +51,14 @@
     <Compile Include="beginning.Designer.cs">
       <DependentUpon>beginning.cs</DependentUpon>
     </Compile>
+    <Compile Include="blastclass.cs" />
     <Compile Include="character.cs" />
+    <Compile Include="level1-2map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level1-2map.Designer.cs">
+      <DependentUpon>level1-2map.cs</DependentUpon>
+    </Compile>
     <Compile Include="level1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +76,9 @@
     <Compile Include="villan.cs" />
     <EmbeddedResource Include="beginning.resx">
       <DependentUpon>beginning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level1-2map.resx">
+      <DependentUpon>level1-2map.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="level1.resx">
       <DependentUpon>level1.cs</DependentUpon>

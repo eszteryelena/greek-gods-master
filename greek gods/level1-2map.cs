@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace greek_gods
+{
+    public partial class level1_2map : Form
+    {
+        public level1_2map()
+        {
+            InitializeComponent();
+        }
+
+        private void level1_2map_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            selectCharacter sc = new selectCharacter();
+            sc.ShowDialog();
+            this.Close();
+        }
+    }
+}
