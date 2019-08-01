@@ -5,7 +5,6 @@ using System.Data;
 using System.Drawing;
 using System.Reflection;
 using System.Linq;
-
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -172,7 +171,17 @@ namespace greek_gods
             
         }
 
-        
+        private void tmrLevel_Tick(object sender, EventArgs e)
+        {
+            if (level1_2map.level == 2)
+            {
+                this.BackgroundImage = Properties.Resources.cave;
+            }
+            else
+            {
+                this.BackgroundImage = Properties.Resources.olympus___Copy;
+            }
+        }
 
         private void checkLives()
         {

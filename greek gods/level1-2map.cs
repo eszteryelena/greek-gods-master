@@ -12,6 +12,7 @@ namespace greek_gods
 {
     public partial class level1_2map : Form
     {
+        public static int level;
         public level1_2map()
         {
             InitializeComponent();
@@ -25,8 +26,9 @@ namespace greek_gods
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            selectCharacter sc = new selectCharacter();
-            sc.ShowDialog();
+            level = 2;
+            level1 l2 = new level1();
+            l2.ShowDialog();
             this.Close();
         }
     }

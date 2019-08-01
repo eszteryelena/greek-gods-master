@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(level1));
             this.pnlGame = new System.Windows.Forms.Panel();
+            this.blast = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tmrVillan = new System.Windows.Forms.Timer(this.components);
@@ -44,13 +45,13 @@
             this.mnuStop = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrHero = new System.Windows.Forms.Timer(this.components);
             this.txtName = new System.Windows.Forms.TextBox();
-            this.blast = new System.Windows.Forms.PictureBox();
             this.tmrBlast = new System.Windows.Forms.Timer(this.components);
+            this.tmrLevel = new System.Windows.Forms.Timer(this.components);
             this.pnlGame.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.blast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.blast)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlGame
@@ -62,6 +63,16 @@
             this.pnlGame.Size = new System.Drawing.Size(500, 400);
             this.pnlGame.TabIndex = 0;
             this.pnlGame.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGame_Paint);
+            // 
+            // blast
+            // 
+            this.blast.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("blast.BackgroundImage")));
+            this.blast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.blast.Location = new System.Drawing.Point(380, 360);
+            this.blast.Name = "blast";
+            this.blast.Size = new System.Drawing.Size(15, 15);
+            this.blast.TabIndex = 0;
+            this.blast.TabStop = false;
             // 
             // pictureBox4
             // 
@@ -191,20 +202,15 @@
             this.txtName.Text = "0";
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // blast
-            // 
-            this.blast.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("blast.BackgroundImage")));
-            this.blast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.blast.Location = new System.Drawing.Point(380, 360);
-            this.blast.Name = "blast";
-            this.blast.Size = new System.Drawing.Size(15, 15);
-            this.blast.TabIndex = 0;
-            this.blast.TabStop = false;
-            // 
             // tmrBlast
             // 
             this.tmrBlast.Enabled = true;
             this.tmrBlast.Tick += new System.EventHandler(this.tmrBlast_Tick);
+            // 
+            // tmrLevel
+            // 
+            this.tmrLevel.Enabled = true;
+            this.tmrLevel.Tick += new System.EventHandler(this.tmrLevel_Tick);
             // 
             // level1
             // 
@@ -231,11 +237,11 @@
             this.Load += new System.EventHandler(this.level1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.onKeyDown);
             this.pnlGame.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.blast)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.blast)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,5 +265,6 @@
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.PictureBox blast;
         private System.Windows.Forms.Timer tmrBlast;
+        private System.Windows.Forms.Timer tmrLevel;
     }
 }

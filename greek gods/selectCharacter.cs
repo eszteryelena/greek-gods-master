@@ -67,5 +67,10 @@ namespace greek_gods
         {
 
         }
+
+        private void selectCharacter_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
