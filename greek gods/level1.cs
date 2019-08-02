@@ -126,14 +126,30 @@ namespace greek_gods
                     checkLives();
                 }
 
-                if (score >= 100)
-                {
-                    this.Hide();
-                    tmrVillan.Enabled = false;
-                    tmrHero.Enabled = false; 
-                    level1_2map l1to2m = new level1_2map();
-                    l1to2m.ShowDialog();
-                    this.Close();
+                if (level1_2map.level == 2) {
+                    if (score >= 500)
+                    {
+                        this.Hide();
+                        tmrVillan.Enabled = false;
+                        tmrHero.Enabled = false;
+                        level2_3map l1to2m = new level2_3map();
+                        l1to2m.ShowDialog();
+                        this.Close();
+                    }
+
+                }
+                        
+              else  {
+                    if (score >= 200)
+                    {
+                        this.Hide();
+                        tmrVillan.Enabled = false;
+                        tmrHero.Enabled = false;
+                        level1_2map l1to2m = new level1_2map();
+                        l1to2m.ShowDialog();
+                        this.Close();
+                    }
+                       
                 }
             }
             pnlGame.Invalidate();
@@ -173,14 +189,23 @@ namespace greek_gods
 
         private void tmrLevel_Tick(object sender, EventArgs e)
         {
-            if (level1_2map.level == 2)
+            //level two
+            if (level2_3map.level == 3)
             {
-                this.BackgroundImage = Properties.Resources.cave;
+                this.BackgroundImage = Properties.Resources.forest;
             }
             else
             {
-                this.BackgroundImage = Properties.Resources.olympus___Copy;
+                if (level1_2map.level == 2)
+                {
+                    this.BackgroundImage = Properties.Resources.cave;
+                }
+                else
+                {
+                    this.BackgroundImage = Properties.Resources.olympus___Copy;
+                }
             }
+               
         }
 
         private void checkLives()

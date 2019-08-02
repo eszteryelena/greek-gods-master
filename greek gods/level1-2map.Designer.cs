@@ -52,6 +52,7 @@
             this.label1.Size = new System.Drawing.Size(394, 72);
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox5
             // 
@@ -63,6 +64,7 @@
             this.pictureBox5.Size = new System.Drawing.Size(186, 41);
             this.pictureBox5.TabIndex = 13;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox4
             // 
@@ -74,6 +76,7 @@
             this.pictureBox4.Size = new System.Drawing.Size(132, 33);
             this.pictureBox4.TabIndex = 14;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // lionpicture
             // 
@@ -85,6 +88,7 @@
             this.lionpicture.Size = new System.Drawing.Size(66, 65);
             this.lionpicture.TabIndex = 15;
             this.lionpicture.TabStop = false;
+            this.lionpicture.Click += new System.EventHandler(this.lionpicture_Click);
             // 
             // pictureBox1
             // 
@@ -96,6 +100,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(66, 65);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label2
             // 
@@ -127,6 +132,7 @@
             this.button2.TabIndex = 19;
             this.button2.Text = "COMPLETED";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // level1_2map
             // 

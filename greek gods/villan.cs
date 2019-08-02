@@ -13,6 +13,7 @@ namespace greek_gods
         public int x, y, width, height;//variables for the rectangle
         public Image villanImage;//variable for the planet's image
         public Image villanImage2;//variable for the planet's image
+        public Image villanImage3;//variable for the planet's image
         public Rectangle villanRec;//variable for a rectangle to place our image in
         public int score;
 
@@ -29,22 +30,32 @@ namespace greek_gods
             height = 20;
             villanImage = Image.FromFile("object.png");
             villanImage2 = Image.FromFile("hydra.png");
+            villanImage3 = Image.FromFile("arrow.png");
             villanRec = new Rectangle(x, y, width, height);
         }
 
             // Methods for the Planet class
             public void drawVillan(Graphics g)
         {
-            if (level1_2map.level == 2)
+            if (level2_3map.level == 3)
             {
                 villanRec = new Rectangle(x, y, width, height);
-                g.DrawImage(villanImage2, villanRec);
+                g.DrawImage(villanImage3, villanRec);
             }
             else
             {
-                villanRec = new Rectangle(x, y, width, height);
-                g.DrawImage(villanImage, villanRec);
+                if (level1_2map.level == 2)
+                {
+                    villanRec = new Rectangle(x, y, width, height);
+                    g.DrawImage(villanImage2, villanRec);
+                }
+                else
+                {
+                    villanRec = new Rectangle(x, y, width, height);
+                    g.DrawImage(villanImage, villanRec);
+                }
             }
+            
         }
             
 
