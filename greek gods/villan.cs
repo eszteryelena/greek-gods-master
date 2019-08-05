@@ -56,60 +56,102 @@ namespace greek_gods
             // Methods for the Planet class
             public void drawVillan(Graphics g)
         {
-            if (level6_7map.level == 7)
+            if (level10_11map.level == 12)
             {
                 villanRec = new Rectangle(x, y, width, height);
-                g.DrawImage(villanImage6, villanRec);
+                g.DrawImage(villanImage12, villanRec);
             }
             else
             {
-                if (level5_6map.level == 6)
+                if (level10_11map.level == 11)
                 {
                     villanRec = new Rectangle(x, y, width, height);
-                    g.DrawImage(villanImage6, villanRec);
+                    g.DrawImage(villanImage11, villanRec);
                 }
                 else
                 {
-                    if (level4_5map.level == 5)
+                    if (level9_10map.level == 10)
                     {
                         villanRec = new Rectangle(x, y, width, height);
-                        g.DrawImage(villanImage5, villanRec);
+                        g.DrawImage(villanImage10, villanRec);
                     }
                     else
                     {
-                        if (level3_4.level == 4)
+                        if (level8_9mapcs.level == 9)
                         {
                             villanRec = new Rectangle(x, y, width, height);
-                            g.DrawImage(villanImage4, villanRec);
+                            g.DrawImage(villanImage9, villanRec);
                         }
                         else
                         {
-                            if (level2_3map.level == 3)
+                            if (level7_8map.level == 8)
                             {
                                 villanRec = new Rectangle(x, y, width, height);
-                                g.DrawImage(villanImage3, villanRec);
+                                g.DrawImage(villanImage8, villanRec);
                             }
                             else
                             {
-                                if (level1_2map.level == 2)
+                                if (level6_7map.level == 7)
                                 {
                                     villanRec = new Rectangle(x, y, width, height);
-                                    g.DrawImage(villanImage2, villanRec);
+                                    g.DrawImage(villanImage7, villanRec);
                                 }
                                 else
                                 {
-                                    villanRec = new Rectangle(x, y, width, height);
-                                    g.DrawImage(villanImage1, villanRec);
+                                    if (level5_6map.level == 6)
+                                    {
+                                        villanRec = new Rectangle(x, y, width, height);
+                                        g.DrawImage(villanImage6, villanRec);
+                                    }
+                                    else
+                                    {
+                                        if (level4_5map.level == 5)
+                                        {
+                                            villanRec = new Rectangle(x, y, width, height);
+                                            g.DrawImage(villanImage5, villanRec);
+                                        }
+                                        else
+                                        {
+                                            if (level3_4.level == 4)
+                                            {
+                                                villanRec = new Rectangle(x, y, width, height);
+                                                g.DrawImage(villanImage4, villanRec);
+                                            }
+                                            else
+                                            {
+                                                if (level2_3map.level == 3)
+                                                {
+                                                    villanRec = new Rectangle(x, y, width, height);
+                                                    g.DrawImage(villanImage3, villanRec);
+                                                }
+                                                else
+                                                {
+                                                    if (level1_2map.level == 2)
+                                                    {
+                                                        villanRec = new Rectangle(x, y, width, height);
+                                                        g.DrawImage(villanImage2, villanRec);
+                                                    }
+                                                    else
+                                                    {
+                                                        villanRec = new Rectangle(x, y, width, height);
+                                                        g.DrawImage(villanImage1, villanRec);
+                                                    }
+                                                }
+
+                                            }
+                                        }
+                                    }
+
                                 }
                             }
 
                         }
                     }
                 }
-
             }
-
-
+           
+            
+           
         }
             
 
