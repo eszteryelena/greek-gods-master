@@ -19,6 +19,10 @@ namespace greek_gods
         public Image villanImage6;//variable for the planet's image
         public Image villanImage7;//variable for the planet's image
         public Image villanImage8;//variable for the planet's image
+        public Image villanImage9;//variable for the planet's image
+        public Image villanImage10;//variable for the planet's image
+        public Image villanImage11;//variable for the planet's image
+        public Image villanImage12;//variable for the planet's image
         public Rectangle villanRec;//variable for a rectangle to place our image in
         public int score;
 
@@ -41,6 +45,10 @@ namespace greek_gods
             villanImage6 = Image.FromFile("feather.png");
             villanImage7 = Image.FromFile("bull2.png");
             villanImage8 = Image.FromFile("horse-shoe.png");
+            villanImage9 = Image.FromFile("spear.png");
+            villanImage10 = Image.FromFile("dogs.png");
+            villanImage11 = Image.FromFile("earth.png");
+            villanImage12 = Image.FromFile("fire.png");
 
             villanRec = new Rectangle(x, y, width, height);
         }
