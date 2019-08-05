@@ -118,13 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cave" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cave.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\eight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="forest" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\forest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eleven" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\eleven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="olympus___Copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\olympus - Copy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="five" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\five.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="four" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\four.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\nine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="one" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\one.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="seven" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\seven.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="six" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\six.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="three" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\three.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="twelve" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\twelve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\wo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

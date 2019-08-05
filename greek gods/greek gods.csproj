@@ -65,11 +65,65 @@
     <Compile Include="level1.Designer.cs">
       <DependentUpon>level1.cs</DependentUpon>
     </Compile>
+    <Compile Include="level10-11map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level10-11map.Designer.cs">
+      <DependentUpon>level10-11map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="level11-12map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level11-12map.Designer.cs">
+      <DependentUpon>level11-12map.cs</DependentUpon>
+    </Compile>
     <Compile Include="level2-3map.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="level2-3map.Designer.cs">
       <DependentUpon>level2-3map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="level3-4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level3-4.Designer.cs">
+      <DependentUpon>level3-4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="level4-5map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level4-5map.Designer.cs">
+      <DependentUpon>level4-5map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="level5-6map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level5-6map.Designer.cs">
+      <DependentUpon>level5-6map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="level6-7map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level6-7map.Designer.cs">
+      <DependentUpon>level6-7map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="level7-8map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level7-8map.Designer.cs">
+      <DependentUpon>level7-8map.cs</DependentUpon>
+    </Compile>
+    <Compile Include="level8-9mapcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level8-9mapcs.Designer.cs">
+      <DependentUpon>level8-9mapcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="level9-10map.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="level9-10map.Designer.cs">
+      <DependentUpon>level9-10map.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,8 +143,35 @@
     <EmbeddedResource Include="level1.resx">
       <DependentUpon>level1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="level10-11map.resx">
+      <DependentUpon>level10-11map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level11-12map.resx">
+      <DependentUpon>level11-12map.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="level2-3map.resx">
       <DependentUpon>level2-3map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level3-4.resx">
+      <DependentUpon>level3-4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level4-5map.resx">
+      <DependentUpon>level4-5map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level5-6map.resx">
+      <DependentUpon>level5-6map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level6-7map.resx">
+      <DependentUpon>level6-7map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level7-8map.resx">
+      <DependentUpon>level7-8map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level8-9mapcs.resx">
+      <DependentUpon>level8-9mapcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="level9-10map.resx">
+      <DependentUpon>level9-10map.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -126,6 +207,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\forest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cave-forest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\three.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\four.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\one.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\wo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\five.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\six.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\eight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\eleven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\nine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\seven.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\twelve.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

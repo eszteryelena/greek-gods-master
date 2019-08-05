@@ -11,9 +11,14 @@ namespace greek_gods
     class villan
     {
         public int x, y, width, height;//variables for the rectangle
-        public Image villanImage;//variable for the planet's image
+        public Image villanImage1;//variable for the planet's image
         public Image villanImage2;//variable for the planet's image
         public Image villanImage3;//variable for the planet's image
+        public Image villanImage4;//variable for the planet's image
+        public Image villanImage5;//variable for the planet's image
+        public Image villanImage6;//variable for the planet's image
+        public Image villanImage7;//variable for the planet's image
+        public Image villanImage8;//variable for the planet's image
         public Rectangle villanRec;//variable for a rectangle to place our image in
         public int score;
 
@@ -28,34 +33,75 @@ namespace greek_gods
             x = 10; //changed
             width = 20;
             height = 20;
-            villanImage = Image.FromFile("object.png");
+            villanImage1 = Image.FromFile("object.png");
             villanImage2 = Image.FromFile("hydra.png");
             villanImage3 = Image.FromFile("arrow.png");
+            villanImage4 = Image.FromFile("boar.png");
+            villanImage5 = Image.FromFile("rake.png");
+            villanImage6 = Image.FromFile("feather.png");
+            villanImage7 = Image.FromFile("bull2.png");
+            villanImage8 = Image.FromFile("horse-shoe.png");
+
             villanRec = new Rectangle(x, y, width, height);
         }
 
             // Methods for the Planet class
             public void drawVillan(Graphics g)
         {
-            if (level2_3map.level == 3)
+            if (level6_7map.level == 7)
             {
                 villanRec = new Rectangle(x, y, width, height);
-                g.DrawImage(villanImage3, villanRec);
+                g.DrawImage(villanImage6, villanRec);
             }
             else
             {
-                if (level1_2map.level == 2)
+                if (level5_6map.level == 6)
                 {
                     villanRec = new Rectangle(x, y, width, height);
-                    g.DrawImage(villanImage2, villanRec);
+                    g.DrawImage(villanImage6, villanRec);
                 }
                 else
                 {
-                    villanRec = new Rectangle(x, y, width, height);
-                    g.DrawImage(villanImage, villanRec);
+                    if (level4_5map.level == 5)
+                    {
+                        villanRec = new Rectangle(x, y, width, height);
+                        g.DrawImage(villanImage5, villanRec);
+                    }
+                    else
+                    {
+                        if (level3_4.level == 4)
+                        {
+                            villanRec = new Rectangle(x, y, width, height);
+                            g.DrawImage(villanImage4, villanRec);
+                        }
+                        else
+                        {
+                            if (level2_3map.level == 3)
+                            {
+                                villanRec = new Rectangle(x, y, width, height);
+                                g.DrawImage(villanImage3, villanRec);
+                            }
+                            else
+                            {
+                                if (level1_2map.level == 2)
+                                {
+                                    villanRec = new Rectangle(x, y, width, height);
+                                    g.DrawImage(villanImage2, villanRec);
+                                }
+                                else
+                                {
+                                    villanRec = new Rectangle(x, y, width, height);
+                                    g.DrawImage(villanImage1, villanRec);
+                                }
+                            }
+
+                        }
+                    }
                 }
+
             }
-            
+
+
         }
             
 
