@@ -125,114 +125,192 @@ namespace greek_gods
                     txtLives.Text = lives.ToString();// display number of lives
                     checkLives();
                 }
-                if (level6_7map.level == 7)
+                if (level11_12map.level == 12)
                 {
                     if (score >= 500)
                     {
-                        this.Hide();
+                        
                         tmrVillan.Enabled = false;
                         tmrHero.Enabled = false;
-                        level6_7map l6to7m = new level6_7map();
-                        l6to7m.ShowDialog();
-                        this.Close();
+                     
                     }
                 }
 
                 else
                 {
-                    if (level5_6map.level == 6)
+                    if (level10_11map.level == 11)
                     {
                         if (score >= 500)
                         {
                             this.Hide();
                             tmrVillan.Enabled = false;
                             tmrHero.Enabled = false;
-                            level6_7map l6to7m = new level6_7map();
-                            l6to7m.ShowDialog();
+                            level10_11map l10to11m = new level10_11map();
+                            l10to11m.ShowDialog();
                             this.Close();
                         }
                     }
-
                     else
                     {
-                        if (level4_5map.level == 5)
+                        if (level9_10map.level == 10)
                         {
                             if (score >= 500)
                             {
                                 this.Hide();
                                 tmrVillan.Enabled = false;
                                 tmrHero.Enabled = false;
-                                level5_6map l5to6m = new level5_6map();
-                                l5to6m.ShowDialog();
+                                level9_10map l9to10m = new level9_10map();
+                                l9to10m.ShowDialog();
                                 this.Close();
                             }
                         }
 
                         else
                         {
-                            if (level3_4.level == 4)
+                            if (level8_9mapcs.level == 9)
                             {
                                 if (score >= 500)
                                 {
                                     this.Hide();
                                     tmrVillan.Enabled = false;
                                     tmrHero.Enabled = false;
-                                    level4_5map l4to5m = new level4_5map();
-                                    l4to5m.ShowDialog();
+                                    level8_9mapcs l8to9m = new level8_9mapcs();
+                                    l8to9m.ShowDialog();
                                     this.Close();
                                 }
                             }
+
                             else
                             {
-                                if (level2_3map.level == 3)
+                                if (level7_8map.level == 8)
                                 {
                                     if (score >= 500)
                                     {
                                         this.Hide();
                                         tmrVillan.Enabled = false;
                                         tmrHero.Enabled = false;
-                                        level3_4 l3to4m = new level3_4();
-                                        l3to4m.ShowDialog();
+                                        level7_8map l7to8m = new level7_8map();
+                                        l7to8m.ShowDialog();
                                         this.Close();
                                     }
-
                                 }
                                 else
                                 {
-                                    if (level1_2map.level == 2)
+                                    if (level6_7map.level == 7)
                                     {
                                         if (score >= 500)
                                         {
                                             this.Hide();
                                             tmrVillan.Enabled = false;
                                             tmrHero.Enabled = false;
-                                            level2_3map l1to2m = new level2_3map();
-                                            l1to2m.ShowDialog();
+                                            level6_7map l6to7m = new level6_7map();
+                                            l6to7m.ShowDialog();
                                             this.Close();
                                         }
-
                                     }
 
                                     else
                                     {
-                                        if (score >= 200)
+                                        if (level5_6map.level == 6)
                                         {
-                                            this.Hide();
-                                            tmrVillan.Enabled = false;
-                                            tmrHero.Enabled = false;
-                                            level1_2map l1to2m = new level1_2map();
-                                            l1to2m.ShowDialog();
-                                            this.Close();
+                                            if (score >= 500)
+                                            {
+                                                this.Hide();
+                                                tmrVillan.Enabled = false;
+                                                tmrHero.Enabled = false;
+                                                level6_7map l6to7m = new level6_7map();
+                                                l6to7m.ShowDialog();
+                                                this.Close();
+                                            }
                                         }
+
+                                        else
+                                        {
+                                            if (level4_5map.level == 5)
+                                            {
+                                                if (score >= 500)
+                                                {
+                                                    this.Hide();
+                                                    tmrVillan.Enabled = false;
+                                                    tmrHero.Enabled = false;
+                                                    level5_6map l5to6m = new level5_6map();
+                                                    l5to6m.ShowDialog();
+                                                    this.Close();
+                                                }
+                                            }
+
+                                            else
+                                            {
+                                                if (level3_4.level == 4)
+                                                {
+                                                    if (score >= 500)
+                                                    {
+                                                        this.Hide();
+                                                        tmrVillan.Enabled = false;
+                                                        tmrHero.Enabled = false;
+                                                        level4_5map l4to5m = new level4_5map();
+                                                        l4to5m.ShowDialog();
+                                                        this.Close();
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    if (level2_3map.level == 3)
+                                                    {
+                                                        if (score >= 500)
+                                                        {
+                                                            this.Hide();
+                                                            tmrVillan.Enabled = false;
+                                                            tmrHero.Enabled = false;
+                                                            level3_4 l3to4m = new level3_4();
+                                                            l3to4m.ShowDialog();
+                                                            this.Close();
+                                                        }
+
+                                                    }
+                                                    else
+                                                    {
+                                                        if (level1_2map.level == 2)
+                                                        {
+                                                            if (score >= 500)
+                                                            {
+                                                                this.Hide();
+                                                                tmrVillan.Enabled = false;
+                                                                tmrHero.Enabled = false;
+                                                                level2_3map l1to2m = new level2_3map();
+                                                                l1to2m.ShowDialog();
+                                                                this.Close();
+                                                            }
+
+                                                        }
+
+                                                        else
+                                                        {
+                                                            if (score >= 200)
+                                                            {
+                                                                this.Hide();
+                                                                tmrVillan.Enabled = false;
+                                                                tmrHero.Enabled = false;
+                                                                level1_2map l1to2m = new level1_2map();
+                                                                l1to2m.ShowDialog();
+                                                                this.Close();
+                                                            }
+
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
 
                                     }
                                 }
                             }
                         }
+
                     }
-
-
                 }
+               
 
                 pnlGame.Invalidate();
                 //makes the paint event fire to redraw the panel
@@ -273,53 +351,91 @@ namespace greek_gods
         private void tmrLevel_Tick(object sender, EventArgs e)
         {
             //level two
-            if (level6_7map.level == 7)
+            if (level11_12map.level == 12)
             {
-                this.BackgroundImage = Properties.Resources.seven
+                this.BackgroundImage = Properties.Resources.twelve;
             }
             else
             {
-                if (level5_6map.level == 6)
+                if (level10_11map.level == 11)
                 {
-                    this.BackgroundImage = Properties.Resources.six;
+                    this.BackgroundImage = Properties.Resources.eleven;
                 }
                 else
                 {
-                    if (level4_5map.level == 5)
+                    if (level9_10map.level == 10)
                     {
-                        this.BackgroundImage = Properties.Resources.five;
+                        this.BackgroundImage = Properties.Resources.ten;
                     }
                     else
                     {
-
-                        if (level3_4.level == 4)
+                        if (level8_9mapcs.level == 9)
                         {
-                            this.BackgroundImage = Properties.Resources.four;
+                            this.BackgroundImage = Properties.Resources.nine;
                         }
                         else
                         {
-                            if (level2_3map.level == 3)
+                            if (level7_8map.level == 8)
                             {
-                                this.BackgroundImage = Properties.Resources.three;
+                                this.BackgroundImage = Properties.Resources.eight;
                             }
                             else
                             {
-                                if (level1_2map.level == 2)
+                                if (level6_7map.level == 7)
                                 {
-                                    this.BackgroundImage = Properties.Resources.wo;
+                                    this.BackgroundImage = Properties.Resources.seven;
                                 }
                                 else
                                 {
-                                    this.BackgroundImage = Properties.Resources.one;
+                                    if (level5_6map.level == 6)
+                                    {
+                                        this.BackgroundImage = Properties.Resources.six;
+                                    }
+                                    else
+                                    {
+                                        if (level4_5map.level == 5)
+                                        {
+                                            this.BackgroundImage = Properties.Resources.five;
+                                        }
+                                        else
+                                        {
+
+                                            if (level3_4.level == 4)
+                                            {
+                                                this.BackgroundImage = Properties.Resources.four;
+                                            }
+                                            else
+                                            {
+                                                if (level2_3map.level == 3)
+                                                {
+                                                    this.BackgroundImage = Properties.Resources.three;
+                                                }
+                                                else
+                                                {
+                                                    if (level1_2map.level == 2)
+                                                    {
+                                                        this.BackgroundImage = Properties.Resources.wo;
+                                                    }
+                                                    else
+                                                    {
+                                                        this.BackgroundImage = Properties.Resources.one;
+                                                    }
+                                                }
+
+                                            }
+
+                                        }
+
+                                    }
                                 }
                             }
-
                         }
 
                     }
-
                 }
+
             }
+
         }
            
 
