@@ -11,6 +11,11 @@ namespace greek_gods
     class villan
     {
         public int x, y, width, height;//variables for the rectangle
+        public Rectangle villanRec;//variable for a rectangle to place our image in
+        public int score;
+
+        //these are the images for the antagonist of each of the levels// 
+        // the corresonding antagonist to hercules labours.
         public Image villanImage1;//variable for the planet's image
         public Image villanImage2;//variable for the planet's image
         public Image villanImage3;//variable for the planet's image
@@ -23,8 +28,7 @@ namespace greek_gods
         public Image villanImage10;//variable for the planet's image
         public Image villanImage11;//variable for the planet's image
         public Image villanImage12;//variable for the planet's image
-        public Rectangle villanRec;//variable for a rectangle to place our image in
-        public int score;
+       
 
         public villan()
         {
@@ -149,9 +153,7 @@ namespace greek_gods
                     }
                 }
             }
-           
-            
-           
+     
         }
             
 

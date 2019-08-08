@@ -21,8 +21,8 @@ namespace greek_gods
            //this.megara = megara;
             x = 380;
             y = 360;
-            width = 35;
-            height = 55;
+            width = 20;
+            height = 40;
             characterRec = new Rectangle(x, y, width, height);
             
 

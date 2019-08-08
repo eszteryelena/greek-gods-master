@@ -47,18 +47,25 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.tmrBlast = new System.Windows.Forms.Timer(this.components);
             this.tmrLevel = new System.Windows.Forms.Timer(this.components);
+            this.imageDown = new System.Windows.Forms.PictureBox();
+            this.imageUp = new System.Windows.Forms.PictureBox();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlGame.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.blast)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageUp)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlGame
             // 
             this.pnlGame.BackColor = System.Drawing.Color.Transparent;
+            this.pnlGame.Controls.Add(this.imageDown);
             this.pnlGame.Controls.Add(this.blast);
-            this.pnlGame.Location = new System.Drawing.Point(24, 47);
+            this.pnlGame.Controls.Add(this.imageUp);
+            this.pnlGame.Location = new System.Drawing.Point(24, 51);
             this.pnlGame.Name = "pnlGame";
             this.pnlGame.Size = new System.Drawing.Size(500, 400);
             this.pnlGame.TabIndex = 0;
@@ -79,7 +86,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(24, 27);
+            this.pictureBox4.Location = new System.Drawing.Point(24, 31);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(132, 33);
             this.pictureBox4.TabIndex = 12;
@@ -90,7 +97,7 @@
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
             this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(24, 60);
+            this.pictureBox5.Location = new System.Drawing.Point(24, 64);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(186, 41);
             this.pictureBox5.TabIndex = 11;
@@ -127,22 +134,22 @@
             // txtLives
             // 
             this.txtLives.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLives.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLives.Font = new System.Drawing.Font("rainyhearts", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLives.Location = new System.Drawing.Point(535, 262);
             this.txtLives.Name = "txtLives";
             this.txtLives.ReadOnly = true;
-            this.txtLives.Size = new System.Drawing.Size(92, 19);
+            this.txtLives.Size = new System.Drawing.Size(92, 17);
             this.txtLives.TabIndex = 17;
             this.txtLives.Text = "5";
             // 
             // txtscore
             // 
             this.txtscore.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtscore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtscore.Font = new System.Drawing.Font("rainyhearts", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtscore.Location = new System.Drawing.Point(534, 183);
             this.txtscore.Name = "txtscore";
             this.txtscore.ReadOnly = true;
-            this.txtscore.Size = new System.Drawing.Size(92, 19);
+            this.txtscore.Size = new System.Drawing.Size(92, 17);
             this.txtscore.TabIndex = 18;
             this.txtscore.Text = "0";
             this.txtscore.TextChanged += new System.EventHandler(this.txtscore_TextChanged);
@@ -161,31 +168,37 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Lavender;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnuStart,
-            this.mnuStop});
+            this.mnuStop,
+            this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(634, 24);
             this.menuStrip1.TabIndex = 20;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // mnuStart
             // 
+            this.mnuStart.Font = new System.Drawing.Font("rainyhearts", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuStart.Name = "mnuStart";
-            this.mnuStart.Size = new System.Drawing.Size(42, 20);
-            this.mnuStart.Text = "start";
+            this.mnuStart.Size = new System.Drawing.Size(50, 20);
+            this.mnuStart.Text = "&play";
             this.mnuStart.Click += new System.EventHandler(this.mnuStart_Click);
             // 
             // mnuStop
             // 
+            this.mnuStop.Font = new System.Drawing.Font("rainyhearts", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mnuStop.Name = "mnuStop";
-            this.mnuStop.Size = new System.Drawing.Size(42, 20);
-            this.mnuStop.Text = "stop";
+            this.mnuStop.Size = new System.Drawing.Size(60, 20);
+            this.mnuStop.Text = "&pause";
             this.mnuStop.Click += new System.EventHandler(this.mnuStop_Click);
             // 
             // tmrHero
             // 
+            this.tmrHero.Enabled = true;
             this.tmrHero.Interval = 200;
             this.tmrHero.Tick += new System.EventHandler(this.tmrHero_Tick);
             // 
@@ -193,11 +206,11 @@
             // 
             this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Font = new System.Drawing.Font("rainyhearts", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.SystemColors.Info;
             this.txtName.Location = new System.Drawing.Point(534, 105);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(92, 22);
+            this.txtName.Size = new System.Drawing.Size(92, 20);
             this.txtName.TabIndex = 21;
             this.txtName.Text = "0";
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -212,11 +225,43 @@
             this.tmrLevel.Enabled = true;
             this.tmrLevel.Tick += new System.EventHandler(this.tmrLevel_Tick);
             // 
+            // imageDown
+            // 
+            this.imageDown.BackColor = System.Drawing.Color.Transparent;
+            this.imageDown.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imageDown.BackgroundImage")));
+            this.imageDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imageDown.Location = new System.Drawing.Point(203, 0);
+            this.imageDown.Name = "imageDown";
+            this.imageDown.Size = new System.Drawing.Size(297, 116);
+            this.imageDown.TabIndex = 22;
+            this.imageDown.TabStop = false;
+            this.imageDown.Visible = false;
+            // 
+            // imageUp
+            // 
+            this.imageUp.BackColor = System.Drawing.Color.Transparent;
+            this.imageUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imageUp.BackgroundImage")));
+            this.imageUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imageUp.Location = new System.Drawing.Point(203, 284);
+            this.imageUp.Name = "imageUp";
+            this.imageUp.Size = new System.Drawing.Size(297, 116);
+            this.imageUp.TabIndex = 23;
+            this.imageUp.TabStop = false;
+            this.imageUp.Visible = false;
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Font = new System.Drawing.Font("rainyhearts", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.exitToolStripMenuItem.Text = "&exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // level1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::greek_gods.Properties.Resources.one;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(634, 461);
             this.Controls.Add(this.txtName);
@@ -242,6 +287,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageUp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,5 +313,8 @@
         private System.Windows.Forms.PictureBox blast;
         private System.Windows.Forms.Timer tmrBlast;
         private System.Windows.Forms.Timer tmrLevel;
+        private System.Windows.Forms.PictureBox imageDown;
+        private System.Windows.Forms.PictureBox imageUp;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }

@@ -32,11 +32,13 @@ namespace greek_gods
         private void play_MouseHover(object sender, EventArgs e)
         {
             play.ForeColor = Color.FromArgb(187, 202, 221);
+            play.Font = new Font(play.Font.Name, play.Font.SizeInPoints, FontStyle.Underline);
         }
 
         private void play_MouseLeave(object sender, EventArgs e)
         {
             play.ForeColor = Color.White;
+            play.Font = new Font(play.Font.Name, play.Font.SizeInPoints, FontStyle.Regular);
         }
 
         private void beginning_Load(object sender, EventArgs e)

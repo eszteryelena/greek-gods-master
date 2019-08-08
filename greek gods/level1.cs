@@ -66,8 +66,35 @@ namespace greek_gods
 
         private void tmrHero_Tick(object sender, EventArgs e)
         {
-            character.characterRec.Y = MousePosition.Y - (character.characterRec.Height / 2);
+            if (character.characterRec.Location.Y < 10) // is spaceship within 10 of left side
+            {
+
+                character.characterRec.Y = 10;
+                imageDown.Visible = true;
+
+            }
+            else
+            {
+                if (character.characterRec.Location.Y > 370) // is spaceship within 10 of left side
+                {
+
+                    character.characterRec.Y = 360;
+                    imageUp.Visible = true;
+
+                }
+                else
+                {
+                    character.characterRec.Y = MousePosition.Y - (character.characterRec.Height / 2);
+                    imageDown.Visible = false;
+                    imageUp.Visible = false;
+                }
+                
+            }
+
+           
             Invalidate();
+           
+                
         }
 
         private void mnuStart_Click(object sender, EventArgs e)
@@ -125,6 +152,7 @@ namespace greek_gods
                     txtLives.Text = lives.ToString();// display number of lives
                     checkLives();
                 }
+
                 if (level11_12map.level == 12)
                 {
                     if (score >= 500)
@@ -437,7 +465,16 @@ namespace greek_gods
             }
 
         }
-           
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
         private void checkLives()
         {
