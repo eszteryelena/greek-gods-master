@@ -77,9 +77,9 @@
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.label1.Font = new System.Drawing.Font("rainyhearts", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(204, 14);
+            this.label1.Location = new System.Drawing.Point(12, 89);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(394, 72);
+            this.label1.Size = new System.Drawing.Size(186, 153);
             this.label1.TabIndex = 35;
             this.label1.Text = resources.GetString("label1.Text");
             // 
@@ -88,7 +88,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(161, 343);
+            this.pictureBox3.Location = new System.Drawing.Point(224, 151);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(80, 65);
             this.pictureBox3.TabIndex = 45;
@@ -98,7 +98,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.NavajoWhite;
             this.button4.Font = new System.Drawing.Font("rainyhearts", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(274, 375);
+            this.button4.Location = new System.Drawing.Point(53, 358);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(88, 23);
             this.button4.TabIndex = 44;
@@ -110,7 +110,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(285, 305);
+            this.pictureBox2.Location = new System.Drawing.Point(64, 288);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(66, 65);
             this.pictureBox2.TabIndex = 43;
@@ -120,7 +120,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.NavajoWhite;
             this.button3.Font = new System.Drawing.Font("rainyhearts", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(402, 359);
+            this.button3.Location = new System.Drawing.Point(256, 359);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(88, 23);
             this.button3.TabIndex = 42;
@@ -131,7 +131,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.NavajoWhite;
             this.button2.Font = new System.Drawing.Font("rainyhearts", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(509, 400);
+            this.button2.Location = new System.Drawing.Point(499, 371);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(88, 23);
             this.button2.TabIndex = 41;
@@ -143,7 +143,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(412, 288);
+            this.pictureBox1.Location = new System.Drawing.Point(266, 288);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 65);
             this.pictureBox1.TabIndex = 39;
@@ -154,7 +154,7 @@
             this.lionpicture.BackColor = System.Drawing.Color.Transparent;
             this.lionpicture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lionpicture.BackgroundImage")));
             this.lionpicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.lionpicture.Location = new System.Drawing.Point(522, 334);
+            this.lionpicture.Location = new System.Drawing.Point(512, 305);
             this.lionpicture.Name = "lionpicture";
             this.lionpicture.Size = new System.Drawing.Size(66, 65);
             this.lionpicture.TabIndex = 38;
@@ -165,7 +165,7 @@
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
             this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(40, 320);
+            this.pictureBox6.Location = new System.Drawing.Point(499, 67);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(67, 65);
             this.pictureBox6.TabIndex = 47;
@@ -175,7 +175,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.LightSalmon;
             this.button5.Font = new System.Drawing.Font("rainyhearts", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(39, 388);
+            this.button5.Location = new System.Drawing.Point(498, 135);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(66, 23);
             this.button5.TabIndex = 46;
@@ -187,7 +187,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.NavajoWhite;
             this.button1.Font = new System.Drawing.Font("rainyhearts", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(155, 411);
+            this.button1.Location = new System.Drawing.Point(218, 219);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(88, 23);
             this.button1.TabIndex = 48;
@@ -199,7 +199,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(634, 461);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.button5);
@@ -212,7 +214,6 @@
             this.Controls.Add(this.lionpicture);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.label1);
             this.Name = "level4_5map";
             this.Text = "level4_5map";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();

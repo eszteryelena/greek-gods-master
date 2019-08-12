@@ -20,6 +20,8 @@ namespace greek_gods
         character character = new character();
         int score, lives;
         int blastSpeed = 200;
+        public static int powerups = 0;
+        public static bool earlypowerup = true;
         bool shooting = false;
 
         
@@ -133,8 +135,23 @@ namespace greek_gods
                     blast.Top = 380;
                     blast.Left = 360;
                     shooting = false;
+                    powerups += 1;
                 }
             }
+
+            if (earlypowerup == true)
+            {
+             if (powerups == 3)
+            {
+                    this.Hide();
+                    tmrVillan.Enabled = false;
+                    tmrHero.Enabled = false;
+                    messageboxpowerups mbpu = new messageboxpowerups();
+                    mbpu.ShowDialog();
+                    this.Close();
+                }
+            }
+            
         }
 
         private void tmrVillan_Tick(object sender, EventArgs e)

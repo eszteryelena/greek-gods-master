@@ -31,7 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(level1));
             this.pnlGame = new System.Windows.Forms.Panel();
+            this.imageDown = new System.Windows.Forms.PictureBox();
             this.blast = new System.Windows.Forms.PictureBox();
+            this.imageUp = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tmrVillan = new System.Windows.Forms.Timer(this.components);
@@ -43,20 +45,18 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mnuStart = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuStop = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tmrHero = new System.Windows.Forms.Timer(this.components);
             this.txtName = new System.Windows.Forms.TextBox();
             this.tmrBlast = new System.Windows.Forms.Timer(this.components);
             this.tmrLevel = new System.Windows.Forms.Timer(this.components);
-            this.imageDown = new System.Windows.Forms.PictureBox();
-            this.imageUp = new System.Windows.Forms.PictureBox();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pnlGame.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imageDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.blast)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageUp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imageDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageUp)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlGame
@@ -71,6 +71,18 @@
             this.pnlGame.TabIndex = 0;
             this.pnlGame.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlGame_Paint);
             // 
+            // imageDown
+            // 
+            this.imageDown.BackColor = System.Drawing.Color.Transparent;
+            this.imageDown.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imageDown.BackgroundImage")));
+            this.imageDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imageDown.Location = new System.Drawing.Point(203, 0);
+            this.imageDown.Name = "imageDown";
+            this.imageDown.Size = new System.Drawing.Size(297, 95);
+            this.imageDown.TabIndex = 22;
+            this.imageDown.TabStop = false;
+            this.imageDown.Visible = false;
+            // 
             // blast
             // 
             this.blast.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("blast.BackgroundImage")));
@@ -80,6 +92,18 @@
             this.blast.Size = new System.Drawing.Size(15, 15);
             this.blast.TabIndex = 0;
             this.blast.TabStop = false;
+            // 
+            // imageUp
+            // 
+            this.imageUp.BackColor = System.Drawing.Color.Transparent;
+            this.imageUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imageUp.BackgroundImage")));
+            this.imageUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.imageUp.Location = new System.Drawing.Point(203, 310);
+            this.imageUp.Name = "imageUp";
+            this.imageUp.Size = new System.Drawing.Size(297, 90);
+            this.imageUp.TabIndex = 23;
+            this.imageUp.TabStop = false;
+            this.imageUp.Visible = false;
             // 
             // pictureBox4
             // 
@@ -196,6 +220,14 @@
             this.mnuStop.Text = "&pause";
             this.mnuStop.Click += new System.EventHandler(this.mnuStop_Click);
             // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Font = new System.Drawing.Font("rainyhearts", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.exitToolStripMenuItem.Text = "&exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // tmrHero
             // 
             this.tmrHero.Enabled = true;
@@ -225,38 +257,6 @@
             this.tmrLevel.Enabled = true;
             this.tmrLevel.Tick += new System.EventHandler(this.tmrLevel_Tick);
             // 
-            // imageDown
-            // 
-            this.imageDown.BackColor = System.Drawing.Color.Transparent;
-            this.imageDown.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imageDown.BackgroundImage")));
-            this.imageDown.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imageDown.Location = new System.Drawing.Point(203, 0);
-            this.imageDown.Name = "imageDown";
-            this.imageDown.Size = new System.Drawing.Size(297, 116);
-            this.imageDown.TabIndex = 22;
-            this.imageDown.TabStop = false;
-            this.imageDown.Visible = false;
-            // 
-            // imageUp
-            // 
-            this.imageUp.BackColor = System.Drawing.Color.Transparent;
-            this.imageUp.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("imageUp.BackgroundImage")));
-            this.imageUp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.imageUp.Location = new System.Drawing.Point(203, 284);
-            this.imageUp.Name = "imageUp";
-            this.imageUp.Size = new System.Drawing.Size(297, 116);
-            this.imageUp.TabIndex = 23;
-            this.imageUp.TabStop = false;
-            this.imageUp.Visible = false;
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Font = new System.Drawing.Font("rainyhearts", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
-            this.exitToolStripMenuItem.Text = "&exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // level1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -278,17 +278,17 @@
             this.KeyPreview = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "level1";
-            this.Text = "level1";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.level1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.onKeyDown);
             this.pnlGame.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imageDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.blast)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imageUp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imageDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imageUp)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -81,7 +81,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.NavajoWhite;
             this.button2.Font = new System.Drawing.Font("rainyhearts", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(467, 417);
+            this.button2.Location = new System.Drawing.Point(503, 369);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(88, 23);
             this.button2.TabIndex = 23;
@@ -92,7 +92,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LightSalmon;
             this.button1.Font = new System.Drawing.Font("rainyhearts", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(243, 393);
+            this.button1.Location = new System.Drawing.Point(39, 365);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(66, 23);
             this.button1.TabIndex = 22;
@@ -105,7 +105,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(370, 305);
+            this.pictureBox1.Location = new System.Drawing.Point(272, 318);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 65);
             this.pictureBox1.TabIndex = 21;
@@ -116,7 +116,7 @@
             this.lionpicture.BackColor = System.Drawing.Color.Transparent;
             this.lionpicture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lionpicture.BackgroundImage")));
             this.lionpicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.lionpicture.Location = new System.Drawing.Point(480, 351);
+            this.lionpicture.Location = new System.Drawing.Point(516, 303);
             this.lionpicture.Name = "lionpicture";
             this.lionpicture.Size = new System.Drawing.Size(66, 65);
             this.lionpicture.TabIndex = 20;
@@ -126,7 +126,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.NavajoWhite;
             this.button3.Font = new System.Drawing.Font("rainyhearts", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(360, 376);
+            this.button3.Location = new System.Drawing.Point(262, 389);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(88, 23);
             this.button3.TabIndex = 24;
@@ -138,7 +138,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(243, 322);
+            this.pictureBox2.Location = new System.Drawing.Point(39, 294);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(66, 65);
             this.pictureBox2.TabIndex = 25;
@@ -149,6 +149,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(634, 461);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button3);

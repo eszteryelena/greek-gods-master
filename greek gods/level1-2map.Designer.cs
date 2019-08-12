@@ -83,7 +83,7 @@
             this.lionpicture.BackColor = System.Drawing.Color.Transparent;
             this.lionpicture.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lionpicture.BackgroundImage")));
             this.lionpicture.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.lionpicture.Location = new System.Drawing.Point(485, 360);
+            this.lionpicture.Location = new System.Drawing.Point(500, 334);
             this.lionpicture.Name = "lionpicture";
             this.lionpicture.Size = new System.Drawing.Size(66, 65);
             this.lionpicture.TabIndex = 15;
@@ -95,7 +95,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(375, 314);
+            this.pictureBox1.Location = new System.Drawing.Point(271, 291);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(66, 65);
             this.pictureBox1.TabIndex = 16;
@@ -114,7 +114,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LightSalmon;
             this.button1.Font = new System.Drawing.Font("rainyhearts", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(375, 381);
+            this.button1.Location = new System.Drawing.Point(271, 358);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(66, 23);
             this.button1.TabIndex = 18;
@@ -126,7 +126,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.NavajoWhite;
             this.button2.Font = new System.Drawing.Font("rainyhearts", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(472, 426);
+            this.button2.Location = new System.Drawing.Point(487, 400);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(88, 23);
             this.button2.TabIndex = 19;
