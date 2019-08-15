@@ -53,6 +53,12 @@
     </Compile>
     <Compile Include="blastclass.cs" />
     <Compile Include="character.cs" />
+    <Compile Include="gameover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameover.Designer.cs">
+      <DependentUpon>gameover.cs</DependentUpon>
+    </Compile>
     <Compile Include="level1-2map.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +148,9 @@
     <Compile Include="villan.cs" />
     <EmbeddedResource Include="beginning.resx">
       <DependentUpon>beginning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameover.resx">
+      <DependentUpon>gameover.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="level1-2map.resx">
       <DependentUpon>level1-2map.cs</DependentUpon>

@@ -143,15 +143,25 @@ namespace greek_gods
             {
              if (powerups == 3)
             {
-                    this.Hide();
                     tmrVillan.Enabled = false;
                     tmrHero.Enabled = false;
                     messageboxpowerups mbpu = new messageboxpowerups();
                     mbpu.ShowDialog();
-                    this.Close();
                 }
             }
-            
+
+            else if (earlypowerup == false)
+            {
+                if  (powerups== 6)
+                {
+                    tmrVillan.Enabled = false;
+                    tmrHero.Enabled = false;
+                    messageboxpowerups mbpu = new messageboxpowerups();
+                    mbpu.ShowDialog();
+                }
+            }
+
+
         }
 
         private void tmrVillan_Tick(object sender, EventArgs e)

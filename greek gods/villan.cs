@@ -160,7 +160,7 @@ namespace greek_gods
         public void moveVillan()
         {
             villanRec.Location = new Point(x, y);
-            if (villanRec.Location.X > 400) //changed
+            if (villanRec.Location.X > 450) //changed
             {
                 score += 1;// add 1 to score when planet reaches bottom of panel
                 x = 20; //changed
