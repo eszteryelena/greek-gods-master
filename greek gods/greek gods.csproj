@@ -131,6 +131,12 @@
     <Compile Include="level9-10map.Designer.cs">
       <DependentUpon>level9-10map.cs</DependentUpon>
     </Compile>
+    <Compile Include="message powerup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="message powerup.Designer.cs">
+      <DependentUpon>message powerup.cs</DependentUpon>
+    </Compile>
     <Compile Include="messageboxpowerups.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="level9-10map.resx">
       <DependentUpon>level9-10map.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="message powerup.resx">
+      <DependentUpon>message powerup.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="messageboxpowerups.resx">
       <DependentUpon>messageboxpowerups.cs</DependentUpon>
